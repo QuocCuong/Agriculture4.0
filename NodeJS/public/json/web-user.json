@@ -1,0 +1,95 @@
+{
+    "user": [
+        {
+          "username": "kenpylov3",
+          "password": "Cuong@123",
+          "devices":
+          [
+            {
+              "name": "An Huu",
+              "id": "0x007876EF",
+              "type": "GPIO",
+              "location":[
+                10.0267475,
+                105.77393
+              ],
+              "valves":[
+                {
+                  "name": "An Huu 01",
+                  "relay": 0,
+                  "status": "OFF",
+                  "item": "sprinkler-head.gif",
+                  "settings":{
+
+                  }
+                },
+                {
+                  "name": "An Huu 02",
+                  "relay": 1,
+                  "status": "OFF",
+                  "item": "sprinkler-head.gif",
+                  "settings":{
+                    
+                  }
+                },
+                {
+                  "name": "An Huu 02",
+                  "relay": 2,
+                  "status": "OFF",
+                  "item": "sprinkler-head.gif",
+                  "settings":{
+                    
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Ben Tre",
+              "id": "0x007876F0",
+              "type": "RF",
+              "location":[
+                10.0267475,
+                105.77393
+              ],
+              "valves":[
+                {
+                  "name": "Ben Tre 01",
+                  "relay": 0,
+                  "status": "OFF",
+                  "item": "sprinkler-head.gif",
+                  "settings":{
+
+                  }
+                },
+                {
+                  "name": "Ben Tre 02",
+                  "relay": 1,
+                  "status": "OFF",
+                  "item": "sprinkler-head.gif",
+                  "settings":{
+                    
+                  }
+                },
+                {
+                  "name": "Ben Tre 02",
+                  "relay": 2,
+                  "status": "OFF",
+                  "item": "sprinkler-head.gif",
+                  "settings":{
+                    
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "username": "admin",
+          "password": "admin",
+          "devices":
+          [
+            
+          ]
+        }
+    ]
+  }

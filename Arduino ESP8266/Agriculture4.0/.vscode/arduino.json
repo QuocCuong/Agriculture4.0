@@ -1,0 +1,6 @@
+{
+    "sketch": "Agriculture4.0.ino",
+    "board": "esp8266:esp8266:nodemcuv2",
+    "configuration": "CpuFrequency=160,FlashSize=4M3M,LwIPVariant=v2mss536,Debug=Disabled,DebugLevel=None____,FlashErase=none,UploadSpeed=115200",
+    "port": "COM3"
+}
