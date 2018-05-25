@@ -15,7 +15,7 @@ socket.on("server-reponse-login", function(data){
             show_content(0);
             for(var index in data.devices){
                 console.log("Thiết bị:" + data.devices[index].name);
-                var temp = sprintf("<a href='#' class='list-group-item' onclick='show_content(%d)'> %s - %s </a>", index, data.devices[index].name, data.devices[index].id);
+                var temp = sprintf("<a href='#' class='list-group-item' onclick='show_content(%d)'> %s - %s <img src='images/check.png'/> ></a>", index, data.devices[index].name, data.devices[index].id);
                 $("#danh-sach-tram").append(temp);
             }
         }
@@ -80,19 +80,23 @@ function show_content(index_device){
     for(var index in list_devices[index_device].valves){
         var temp = sprintf(
             "<div class='device'>"+
+            "<div class='check'><img src='images/check.png' />' </div>"+
             "<div class='img-device'>"+
             "<img src='images/%s'>" +
             "</div>" +
             "<div class='type-device'> Relay %d </div>" +
-            "<div class='status-device'> %s <div>"+
+            "<div class='status-device'><img src='images/%s.jpg' onclick='%s(%d);'/></div>"+
             "<div class='name-device'> %s </div>" +
-            "<div class='sumit-device'>" +
-            "<a id='dialog-window' href='#dialog-box' onclick='open_dialog(%d);'> Cài đặt </a>" +
+            "<div class='setting-device'>" +
+            "<a href='#dialog-box'><img class='rotate360' src='images/caidat.png' id='dialog-window' onclick='open_dialog(%d);'/></a>" +
+            "<div class='text-setting-device'>Cài Đặt</div>"+
             "</div>" +
             "</div>",
             list_devices[index_device].valves[index].item,
             list_devices[index_device].valves[index].relay,
             list_devices[index_device].valves[index].status,
+            list_devices[index_device].valves[index].status,
+            index,
             list_devices[index_device].valves[index].name,
             index
         );
@@ -106,7 +110,7 @@ function open_dialog(i){
      // thêm phần tử id="over" vào sau body
      $('body').append('<div id="over">');
      $('#over').fadeIn(300);
-     alert(i);
+     alert('id='+i);
 }
 function closed_dialog(){
     //ẩn bảng dialog
@@ -119,7 +123,12 @@ function save_dialog(){
     alert('save devices');
 
 }
-
+function ON(index){
+  alert('bật thiết bị thứ: '+index);
+}
+function OFF(index){
+  alert('tắt thiết bị thứ: '+index);
+}
 (function ($) {
     "use strict";
 

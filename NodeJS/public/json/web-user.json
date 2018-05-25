@@ -1,8 +1,8 @@
 {
     "user": [
         {
-          "username": "kenpylov3",
-          "password": "Cuong@123",
+          "username": "k",
+          "password": "k",
           "devices":
           [
             {
@@ -26,7 +26,7 @@
                 {
                   "name": "An Huu 02",
                   "relay": 1,
-                  "status": "OFF",
+                  "status": "ON",
                   "item": "sprinkler-head.gif",
                   "settings":{
                     
@@ -55,7 +55,7 @@
                 {
                   "name": "Ben Tre 01",
                   "relay": 0,
-                  "status": "OFF",
+                  "status": "ON",
                   "item": "sprinkler-head.gif",
                   "settings":{
 
